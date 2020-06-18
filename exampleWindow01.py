@@ -1,10 +1,6 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-'''
-Example of button that open another window and minimize the father window
-'''
-
 
 from tkinter import * 
 from tkinter import messagebox
@@ -77,7 +73,7 @@ class MainWindow:
 
         option03 = Menu(barraMenu, tearoff=0)
         option03.add_command(label="Guardianes del aire", command=self.info_game01)
-        option03.add_command(label="Abel", command=self.info_game02)
+        option03.add_command(label="Guardian del agua", command=self.info_game02)
         barraMenu.add_cascade(label='About Game', menu=option03)
 
         option04 = Menu(barraMenu, tearoff=0)
@@ -98,11 +94,10 @@ class MainWindow:
          messagebox.showinfo("Information", """This game is about the safe of Trees....""")
 
     def info_game02(self):
-         messagebox.showinfo("Information", """This game is about the safe of Trees....""")
+         messagebox.showinfo("Information", """This game is about the safe of water....""")
 
     def showInfo(self):
-         messagebox.showinfo("Information", """Aplicacion de GUI de CRUD de de datos de usuarios
-    que se conecta una base de datos en sqlite3""")
+         messagebox.showinfo("Information", """This app was developed with the purpose, to manage different game with  the same App, make it easier""")
    
     def background_Image(self, root, path_image):
         self.image = path_image #PhotoImage(file=path_image)
